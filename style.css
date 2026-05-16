@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    padding:0;
+    background:#0d2481;
+    font-family:Arial, sans-serif;
+    color:white;
+}
+
+.main{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.left{
+    width:20%;
+}
+
+.center{
+    width:40%;
+    position:relative;
+}
+
+.right{
+    width:30%;
+}
+
+.name{
+    margin-top:40px;
+    font-size:30px;
+    font-style:italic;
+}
+
+img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+}
+
+.img1{
+    position:absolute;
+    top:0;
+    left:50px;
+}
+
+.img2{
+    position:absolute;
+    top:250px;
+    left:0;
+}
+
+.img3{
+    position:absolute;
+    top:250px;
+    left:250px;
+}
+
+.about{
+    margin-top:100px;
+    font-size:30px;
+}
+
+.portfolio{
+    margin-top:500px;
+    text-align:right;
+}
