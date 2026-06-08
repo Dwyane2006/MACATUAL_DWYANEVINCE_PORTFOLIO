@@ -1,51 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dwyane Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<div class="main">
+    <!-- HEADER -->
 
-    <div class="left">
-        <h1>PROFILE</h1>
-        <h1>ABOUT ME</h1>
+    <header>
 
-        <div class="name">
-            <h2>DWYANE</h2>
-            <h2>VINCE</h2>
-                <h2>MACATUAL</h2>
+        <nav>
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <img src="DM..jpg" alt="DM Logo">
+
+            </div>
+
+            <!-- NAVIGATION -->
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1> Hi, I'm
+                Dwyane Vince Estrella Macatual</h1>
+
+            <h2>BSIT Student</h2>
+
+            <p>
+                I am a BSIT student passionate about technology,
+                and exloproring my skills and purpose.
+            </p>
+
+            <a href="#projects" class="btn">
+                View Projects
+            </a>
+
         </div>
 
-        <p>FOOTBALL | BOXING | VOLUNTEER</p>
-    </div>
+        <div class="hero-image">
 
-    <div class="center">
-        <img src="macatual.jpg" class="img1">
-        <img src="macatual2.jpg" class="img2">
-        <img src="macatual3.jpg" class="img3">
-    </div>
+            <img src="macatual2.jpg" alt="Profile Picture">
 
-    <div class="right">
-        <h1>NOV.2006</h1>
-
-        <div class="about">
-            <p>
-                Hi Im Dwyane Vince E. Macatual <br>
-                19 years old living in P-8 <br>
-                Taglatawan Bayugan City.
-            </p>
-            <p>
-                My skill is undiscovered and I'm passionate to 
-                discover my unique skills.
-            </p>
         </div>
 
-        <h1 class="portfolio">PORTFOLIO</h1>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+          Hello! My name is Dwyane Vince E. Macatual 19yrs old, a BSIT student. 
+          I am passionate about exploring and developing my skills 
+          while continuously learning new things, as I believe learning is an 
+          important part of my journey toward success.
+          My dream is to become a police officer someday and 
+          serve my community with dedication, discipline, and integrity. 
+          I enjoy challenging myself both mentally and physically, which 
+          is why I love playing football and boxing.
+          In my free time, I also enjoy playing online video games, 
+          which help me relax and improve my strategic thinking and teamwork skills. 
+          I am motivated to grow as a person, gain new experiences, 
+          and achieve my goals through hard work and perseverance.
+        </p>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="projects" id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+        <div class="project-card"
+            onclick="openModal('DWYANE VINCE_E_MACATUAL.jpg(2).jpg')">
+
+            <img src="DWYANE VINCE_E_MACATUAL.jpg(2).jpg" alt="Travel App">
+
+            <h3>Dwyara Travel & Tours Mobile UI</h3>
+
+            <p>
+                A mobile travel and tour booking interface designed
+                for Siargao tourism.
+            </p>
+
+        </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card"
+            onclick="openModal('DwyaneVince_Macatual_Poster(3).jpg')">
+            
+            <img src="DwyaneVince_Macatual_Poster(3).jpg" alt="Poster">
+
+            <h3>Discover Siargao Promotional Poster</h3>
+
+            <p>
+                A tourism promotional poster showcasing
+                destinations and travel packages.
+            </p>
+
+        </div>
+
     </div>
 
-</div>
+    </section>
+
+    <!-- FULL SCREEN MODAL -->
+
+    <div id="imageModal" class="modal">
+
+        <span class="close"
+            onclick="closeModal()">
+            &times;
+        </span>
+
+        <img class="modal-content" id="modalImage">
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <h2>Let's Connect!</h2>
+
+        <div class="social-links">
+
+            <a href="#">Email</a>
+
+            <a href="#">GitHub</a>
+
+            <a href="#">Facebook</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Dwyane Portfolio
+        </p>
+
+    </footer>
+   <script>
+
+        function openModal(imageSrc){
+
+            document.getElementById("imageModal").style.display = "flex";
+
+            document.getElementById("modalImage").src = imageSrc;
+
+        }
+
+        function closeModal(){
+
+            document.getElementById("imageModal").style.display = "none";
+
+        }
+
+    </script>
 
 </body>
+
 </html>
